@@ -30,6 +30,12 @@ function App() {
     });
   }
 
+  function deleteTodo(id) {
+    setTodos((currentTodos) => {
+      return currentTodos.filter((todo) => todo.id !== id);
+    });
+  }
+
   console.log(todos);
 
   return (
@@ -58,7 +64,12 @@ function App() {
                   onChange={(e) => toggleTodo(todo.id, e.target.checked)}
                 />
                 {todo.title}
-                <button className="btn delete-todo-task">Delete</button>
+                <button
+                  className="btn delete-todo-task"
+                  onClick={(e) => deleteTodo(todo.id)}
+                >
+                  Delete
+                </button>
               </label>
             </li>
           );
