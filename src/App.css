@@ -31,6 +31,7 @@ body {
   color: hsl(200, 100%, 90%);
   line-height: 2rem;
   font-size: 1rem;
+  align-items: center;
 }
 
 .new-todo-form input::placeholder {
@@ -108,7 +109,7 @@ https://getcssscan.com/css-buttons-examples*/
 
 /* CSS */
 .button-80 {
-  width: 50%;
+  width: 90%;
   margin: 0 auto;
   background: #fff;
   backface-visibility: hidden;
